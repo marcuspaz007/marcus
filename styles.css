@@ -1,0 +1,149 @@
+/* Reset básico para margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #f0f4f8;  /* cor de fundo suave azulada */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 900px;
+    margin: 0 auto;  /* centraliza horizontalmente */
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.idade {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4a5568;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 5px solid #667eea;
+}
+
+/* Box Model aplicado aqui: margin, padding e border */
+.content-box {
+    background-color: white;
+    padding: 25px;
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+/* Estilo das listas */
+ul {
+    list-style-position: inside;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f7fafc;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateX(5px);
+    background-color: #edf2f7;
+}
+
+.descricao {
+    font-size: 0.9em;
+    color: #718096;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Objetivo em destaque */
+.objetivo-destaque {
+    background-color: #ebf8ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    text-align: center;
+    border: 2px solid #3182ce;
+}
+
+.objetivo-destaque strong {
+    color: #2b6cb0;
+    font-size: 1.1em;
+}
+
+.motivo {
+    margin-top: 10px;
+    color: #4a5568;
+}
+
+.reflexao {
+    margin-top: 15px;
+    font-style: italic;
+    color: #718096;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2d3748;
+    color: #a0aec0;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .content-box {
+        padding: 15px;
+    }
+}
